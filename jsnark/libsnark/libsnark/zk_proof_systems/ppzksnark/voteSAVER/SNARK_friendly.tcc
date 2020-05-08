@@ -459,13 +459,13 @@ SF_cypher_text<ppT> SF_rerandomize(const r1cs_gg_ppzksnark_keypair<ppT> &gg_keyp
 
     ct_g1.reserve(ct.ct_g1.size());
 
-    // libff::Fr<ppT> r = libff::Fr<ppT>::random_element();
-    // libff::Fr<ppT> z1 = libff::Fr<ppT>::random_element();
-    // libff::Fr<ppT> z2 = libff::Fr<ppT>::random_element();
+    libff::Fr<ppT> r = libff::Fr<ppT>::random_element();
+    libff::Fr<ppT> z1 = libff::Fr<ppT>::random_element();
+    libff::Fr<ppT> z2 = libff::Fr<ppT>::random_element();
 
-    libff::Fr<ppT> r = libff::Fr<ppT>::one();
-    libff::Fr<ppT> z1 = libff::Fr<ppT>::one();
-    libff::Fr<ppT> z2 = libff::Fr<ppT>::one();
+    // libff::Fr<ppT> r = libff::Fr<ppT>::one();
+    // libff::Fr<ppT> z1 = libff::Fr<ppT>::one();
+    // libff::Fr<ppT> z2 = libff::Fr<ppT>::one();
     
     libff::Fr<ppT> z1_inverse = z1.inverse();
 

@@ -7,8 +7,8 @@
 #include "CircuitReader.hpp"
 #include <libsnark/gadgetlib2/integration.hpp>
 #include <libsnark/gadgetlib2/adapters.hpp>
-#include <libsnark/zk_proof_systems/ppzksnark/voteSAVER/examples/run_r1cs_gg_ppzksnark.hpp>
-#include <libsnark/zk_proof_systems/ppzksnark/voteSAVER/r1cs_gg_ppzksnark.hpp>
+#include <libsnark/zk_proof_systems/ppzksnark/SAVER/examples/run_r1cs_gg_ppzksnark.hpp>
+#include <libsnark/zk_proof_systems/ppzksnark/SAVER/r1cs_gg_ppzksnark.hpp>
 #include <libsnark/common/default_types/r1cs_gg_ppzksnark_pp.hpp>
 
 int main(int argc, char **argv) {
