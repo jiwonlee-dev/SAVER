@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Author: Ahmed Kosba <akosba@cs.umd.edu>
+ * Author: JaeKyoung Choi <cjk2889@kookmin.ac.kr>
  *******************************************************************************/
 package examples.generators;
 

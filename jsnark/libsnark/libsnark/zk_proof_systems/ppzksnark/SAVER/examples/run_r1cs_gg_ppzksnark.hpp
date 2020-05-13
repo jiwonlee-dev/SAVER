@@ -1,14 +1,3 @@
-/** @file
- *****************************************************************************
-
- Declaration of functionality that runs the R1CS GG-ppzkSNARK for
- a given R1CS example.
-
- *****************************************************************************
- * @author     This file is part of libsnark, developed by SCIPR Lab
- *             and contributors (see AUTHORS).
- * @copyright  MIT license (see LICENSE file)
- *****************************************************************************/
 
 #ifndef RUN_R1CS_GG_PPZKSNARK_HPP_
 #define RUN_R1CS_GG_PPZKSNARK_HPP_

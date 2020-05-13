@@ -1,3 +1,6 @@
+/*******************************************************************************
+ * Author: JaeKyoung Choi <cjk2889@kookmin.ac.kr>
+ *******************************************************************************/
 
 #ifndef SNARK_FRIENDLY_HPP_
 #define SNARK_FRIENDLY_HPP_
@@ -289,5 +292,5 @@ SF_cypher_text<ppT> SF_rerandomize(const r1cs_gg_ppzksnark_keypair<ppT> &gg_keyp
                                     const SF_public_key<ppT> &pk,
                                     const SF_cypher_text<ppT> &ct);
 }
-#include <libsnark/zk_proof_systems/ppzksnark/voteSAVER/SNARK_friendly.tcc>
+#include <libsnark/zk_proof_systems/ppzksnark/SAVER/SNARK_friendly.tcc>
 #endif
