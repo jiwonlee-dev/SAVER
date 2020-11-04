@@ -171,9 +171,8 @@ public:
 
     SF_keypair<ppT>& operator=(const SF_keypair<ppT>& src){
         if (this == &src) return *this;
-        pk = src.pk;
-        sk = src.sk;
-        vk = src.vk;
+        pk = src.pk; sk = src.sk; vk = src.vk;
+        return *this;
     }
     bool operator==(const SF_keypair<ppT> &other) const;
     friend std::ostream& operator<< <ppT>(std::ostream& out,const SF_keypair<ppT> &keypair); //check

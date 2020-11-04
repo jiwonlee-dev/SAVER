@@ -416,7 +416,7 @@ public abstract class CircuitGenerator {
 			Process p;
 			p = Runtime.getRuntime()
 					.exec(new String[] { Config.LIBSNARK_EXEC, circuitName + ".arith", circuitName + ".in" });
-			p.waitFor();
+			
 			System.out.println(
 					"\n-----------------------------------RUNNING LIBSNARK -----------------------------------------");
 			String line;
@@ -427,6 +427,7 @@ public abstract class CircuitGenerator {
 			}
 			input.close();
 			System.out.println(buf.toString());
+			p.waitFor();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

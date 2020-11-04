@@ -299,9 +299,9 @@ public:
 
     r1cs_gg_ppzksnark_keypair(r1cs_gg_ppzksnark_keypair<ppT> &&other) = default;
     r1cs_gg_ppzksnark_keypair<ppT>& operator=(const r1cs_gg_ppzksnark_keypair<ppT>& src){
-        if (this == &src) return *this;
-        pk = src.pk;
-        vk = src.vk;
+        if (this == &src) return *this; 
+        pk = src.pk; vk = src.vk;
+        return *this;
     }
 
     bool operator==(const r1cs_gg_ppzksnark_keypair &other) const;
